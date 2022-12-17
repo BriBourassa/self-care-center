@@ -5,51 +5,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <title>Self-Care Sunday</title>
   </head>
-
   <body>
-
     <header>
       <h1 class="header">✨ Self Care Center ✨</h1>
     </header>
     <section>
         <h2 class="header" id ="main-question"> Which type of message?</h2>
     </section>
-
-
-  
     <main class="question-box">
         <form class="radio-buttons">
-
           <label class="affirmation">
           <input type="radio" name="radio" id="radio1"/>affirmation</label>
           <label class="affirmation">
           <input type="radio" name="radio" id="radio2"/>mantra</label>
-
-            <!-- <input type="radio" id="affirmation" name="message-type" value="affirmation">
-            <label for="affirmation">affirmation</label>
-            <input type="radio" id="mantra" name="message-type" value ="mantra">
-            <label for="mantra">mantra</label> -->
-            
-            </form>
-
+        </form>
       <article class="main-btn-box">
         <button class="button" id="main-button">Recieve Message</button>
       </article>
-
     </main>
-  <!-- </section> -->
-
     <section class="answer-box">
         <p class="message hidden"></p>
-        <img class="yoga-pic" src="/assets/meditate.svg">
+        <img class="yoga-pic" src="/assets/meditate.svg" alt="yoga icon">
         <button class="delete hidden">I don't like this message!</button>
         <p class="pickOnePls hidden">Please select one!</p>
+        <p class="message-deleted hidden">Messaged Deleted!</p>
     </section>
-    
-
-  
-    
-
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="./assets/message-list.js"></script>
   </body>

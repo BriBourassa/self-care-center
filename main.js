@@ -6,51 +6,52 @@ var message = document.querySelector('.message');
 var yogaPic = document.querySelector('.yoga-pic');
 var deleteBtn = document.querySelector('.delete');
 var pickOnePls = document.querySelector('.pickOnePls')
+var messageDeleted = document.querySelector('.message-deleted')
+
+var currentMessage;
 
 messageBtn.addEventListener('click', getMessage);
 deleteBtn.addEventListener('click', deleteQuote);
-
 
 function randomize(array){
     return Math.floor(Math.random() * array.length)
 };
 
 function getMessage(){
-if(affirmationBtn.checked){
-    message.classList.remove('hidden')
-    yogaPic.classList.add('hidden')
-    message.innerText = affirmations[randomize(affirmations)]
-    deleteBtn.classList.remove('hidden')
-    pickOnePls.classList.add('hidden')
-} else if (mantraBtn.checked){
-    message.classList.remove('hidden')
-    yogaPic.classList.add('hidden')
-    message.innerText = mantras[randomize(mantras)]
-    deleteBtn.classList.remove('hidden')
-    pickOnePls.classList.add('hidden')
-} else {
-    yogaPic.classList.add('hidden')
-    pickOnePls.classList.remove('hidden')
-}
+    if(affirmationBtn.checked){
+        message.classList.remove('hidden')
+        yogaPic.classList.add('hidden')
+        currentMessage = affirmations[randomize(affirmations)]
+        message.innerText = currentMessage
+        deleteBtn.classList.remove('hidden')
+        pickOnePls.classList.add('hidden')
+        messageDeleted.classList.add('hidden')
+    } else if (mantraBtn.checked){
+        message.classList.remove('hidden')
+        yogaPic.classList.add('hidden')
+        currentMessage = mantras[randomize(mantras)]
+        message.innerText = currentMessage
+        deleteBtn.classList.remove('hidden')
+        pickOnePls.classList.add('hidden')
+        messageDeleted.classList.add('hidden')
+    } else {
+        yogaPic.classList.add('hidden')
+        pickOnePls.classList.remove('hidden')
+    }
 };
 
-// DELETE QUOTE:
-
-
 function deleteQuote(){
-
+    var CurrentAff = affirmations.indexOf(currentMessage)
+    var CurrentMantra = mantras.indexOf(currentMessage)
     if(affirmationBtn.checked){
-        affirmations.removeChild(event.target.parentNode)
+        affirmations.splice(CurrentAff, 1)
+        message.classList.add('hidden')
+        messageDeleted.classList.remove('hidden')
+        deleteBtn.classList.add('hidden')
+    } else if(mantraBtn.checked){
+        mantras.splice(CurrentMantra, 1)
+        message.classList.add('hidden')
+        messageDeleted.classList.remove('hidden')
+        deleteBtn.classList.add('hidden')
     }
-
-
-    // need to do twice for aff and mantra? if/else?
-    // if aff.checked, delete buttons deleted message from aff?
-
-// removeChild (DOM)
-// array.removeChild, (event.target.parentNode)
-
-// splice quote from array (data model)
-// for loop 
-
 };
