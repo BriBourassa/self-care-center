@@ -1,33 +1,39 @@
 
-# Self-Care Center 
+## Self-Care Center 
 
-### Abstract:
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+## Abstract:
 
 I built an app that gives the user a randomized positive message- either an affirmation or mantra. The user can select which they would like to see, and delete any messages they don't like.
 
-### Installation Instructions:
-[//]: <> (What steps does a person have to take to get your app cloned down and running?)
+
+## Installation Instructions:
 
 They can clone it from GitHub or use the deployed website
 
-### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+Repository Available Here: https://github.com/BriBourassa/self-care_center
+
+Step 1: Fork repository
+Step 2: Clone repository onto local machine
+Step 3: In terminal - change directory(cd) into newly cloned directory, can also use Finder to search for index.html
+Step 4: Open index.html file in browser
+Step 5: Choose affirmation or mantra and heal your emotional wounds
+
+## Preview of app:
+
+<img width="1426" alt="demo_self_care" src="https://user-images.githubusercontent.com/111149043/213276635-2c4aefb2-136e-4e84-9721-21d676131377.png">
 
 ### Context:
-[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
 
 This is the second project for Mod 1. It is the first project in the mod where we write our own HTML and CSS from scratch.
 
-### Contributors:
-[//]: <> (Who worked on this application? Link to their GitHubs.)
+## Contributors:
 
-### Learning Goals:
-[//]: <> (What were the learning goals of this project? What tech did you work with?)
+Bri Bourassa [https://github.com/BriBourassa]
+
+## Learning Goals:
 
 As a repeater, I did a similar project in the past. It was my goal to make my code cleaner than last time and get more practice with flexboxes 
 
 ### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
 
 Constructing the HTML and CSS felt smoother this time around, and I feel like I have utilized pseudocode much more than in the past. I did struggle with the delete button function, but by pseudocoding the logic out first it was much easier to parse together my ideas into something functional.
