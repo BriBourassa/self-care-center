@@ -8,8 +8,6 @@ I built an app that gives the user a randomized positive message- either an affi
 
 ## Installation Instructions:
 
-They can clone it from GitHub or use the deployed website
-
 Repository Available Here: https://github.com/BriBourassa/self-care_center
 
 Step 1: Fork repository
