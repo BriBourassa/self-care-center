@@ -28,7 +28,7 @@ This is the second project for Mod 1. It is the first project in the mod where w
 
 ## Contributors:
 
-Bri Bourassa [https://github.com/BriBourassa]
+[Bri Bourassa](https://github.com/BriBourassa)
 
 ## Learning Goals:
 
