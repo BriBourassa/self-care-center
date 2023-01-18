@@ -10,11 +10,11 @@ I built an app that gives the user a randomized positive message- either an affi
 
 Repository Available Here: https://github.com/BriBourassa/self-care_center
 
-Step 1: Fork repository
-Step 2: Clone repository onto local machine
-Step 3: In terminal - change directory(cd) into newly cloned directory, can also use Finder to search for index.html
-Step 4: Open index.html file in browser
-Step 5: Choose affirmation or mantra and heal your emotional wounds
+Step 1: Fork repository\
+Step 2: Clone repository onto local machine\
+Step 3: In terminal - change directory(cd) into newly cloned directory, can also use Finder to search for index.html\
+Step 4: Open index.html file in browser\
+Step 5: Choose affirmation or mantra and heal your emotional wounds\
 
 ## Preview of app:
 
